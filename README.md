@@ -2,6 +2,10 @@
   <h1 align="center">Click here to go to the hosted version</h1>
 </a>
 
+<a href="https://github.com/isaacbmiller/hello-web-cs-327">
+  <h1 align="center">Click here to go to the Github repo</h1>
+</a>
+
 <img alt="screenshot of the webpage" src="./BaseScreenshot.png">
 
 <br/>
@@ -14,11 +18,7 @@ This was created as a part of the NU CS 327 Class.
 
 You can find the hosted version [here](https://hello-web-cs-327.vercel.app/).
 
-You can also clone & create this repo locally with the following command:
 
-```bash
-npx create-next-app precedent --example "https://github.com/isaacbmiller/precedent"
-```
 
 ## Author
 
