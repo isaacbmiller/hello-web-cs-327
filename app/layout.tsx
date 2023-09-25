@@ -7,17 +7,17 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title: "A page for Isaac Miller's CS 327 Project",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "A template that is being repurposed for my own personal site for CS 327. This template was chosen because I have never integrated Auth, Prisma, or Postgres into a website before.",
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
+    title: "Isaac Miller's CS 327 Project",
     description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
+      "A template that is being repurposed for my own personal site for CS 327. This template was chosen because I have never integrated Auth, Prisma, or Postgres into a website before.",
+    creator: "@isaacbmiller",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://isaacmiller.dev"),
   themeColor: "#FFF",
 };
 
