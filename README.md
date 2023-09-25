@@ -1,11 +1,8 @@
-<a href="https://precedent.dev">
-  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/opengraph-image">
-  <h1 align="center">ISAAC MILLER WAHOO</h1>
+<a href="https://hello-web-cs-327.vercel.app/">
+  <h1 align="center">Click here to go to the hosted version</h1>
 </a>
 
-<p align="center">
-  This is my own page now
-</p>
+<img alt="screenshot of the webpage" src="./BaseScreenshot.png">
 
 <br/>
 
@@ -14,6 +11,8 @@
 This is my personal website based off of the Vercel Precedent template. I'm using it to learn Next.js, Prisma, and PostGres.
 
 This was created as a part of the NU CS 327 Class.
+
+You can find the hosted version [here](https://hello-web-cs-327.vercel.app/).
 
 You can also clone & create this repo locally with the following command:
 
@@ -25,6 +24,8 @@ npx create-next-app precedent --example "https://github.com/isaacbmiller/precede
 
 - Isaac Miller ([@isaacbmiller](https://github.com/isaacbmiller))
 
-## Original Author
+## Original Author and Template
+
+Template Link: [Precedent](https://vercel.com/templates/next.js/precedent)
 
 - Steven Tey ([@steventey](https://twitter.com/steventey))
