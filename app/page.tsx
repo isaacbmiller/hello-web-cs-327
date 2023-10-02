@@ -1,3 +1,4 @@
+// "use client";
 import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import { DEPLOY_URL } from "@/lib/constants";
@@ -6,24 +7,9 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
+import ButtonComponent from "@/components/home/ButtonComponent";
 
 export default async function Home() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/isaacbmiller/precedent",
-    {
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every 24 hours
-      next: { revalidate: 86400 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
-
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -96,14 +82,19 @@ const features = [
         <li>
           <p>
             Oh yeah I know how to do a list too. I can even do a nested list.
-            <ul className="list-inside list-disc">
-              <li>Wow, look at this nested list.</li>
-              <li>It&apos;s so nested.</li>
-            </ul>
           </p>
+          <ul className="list-inside list-disc">
+            <li>Wow, look at this nested list.</li>
+            <li>It&apos;s so nested.</li>
+          </ul>
         </li>
         <li>Look at me go!</li>
       </ul>
     ),
+  },
+  {
+    title: "This one has a button that does something in JS",
+    description: "The button will increment a counter",
+    demo: <ButtonComponent />,
   },
 ];
